@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winpc's Computadoras | Cableado Estructurado, CCTV y Soporte TI en Tijuana</title>
+    <meta name="description" content="Instalaciones profesionales certificadas Panduit con equipo Fluke. Cableado estructurado, CCTV, control de acceso y venta de equipo de cómputo en Tijuana. 20 años de experiencia.">
+    <meta name="keywords" content="cableado estructurado Tijuana, CCTV Tijuana, Panduit Baja California, instalación de redes, maquiladoras, fibra óptica, control de acceso, Fluke">
+    <meta name="author" content="Winpc's Computadoras">
+
+    <!-- Open Graph / Facebook / WhatsApp preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://trendingtopicok.github.io/WINPCSPORTAFOLIO/">
+    <meta property="og:title" content="Winpc's Computadoras | Cableado Estructurado y CCTV en Tijuana">
+    <meta property="og:description" content="20 años instalando redes profesionales certificadas Panduit. + 4,500 nodos certificados. CCTV, cableado, soporte TI en Tijuana y Baja California.">
+    <meta property="og:image" content="https://trendingtopicok.github.io/WINPCSPORTAFOLIO/img/hero-bg.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="Winpc's Computadoras">
+
+    <!-- Twitter card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Winpc's Computadoras | Soluciones Tecnológicas en Tijuana">
+    <meta name="twitter:description" content="Instalaciones certificadas Panduit con garantía de 15 años. 20 años en Tijuana.">
+    <meta name="twitter:image" content="https://trendingtopicok.github.io/WINPCSPORTAFOLIO/img/hero-bg.jpg">
+
+    <!-- Theme color (mobile address bar) -->
+    <meta name="theme-color" content="#1e40af">
+
+    <link rel="icon" href="img/logo-winpcs.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+
+        .hero-bg {
+            background:
+              linear-gradient(135deg, rgba(15, 23, 42, .94) 0%, rgba(30, 64, 175, .82) 100%),
+              url('img/hero-bg.jpg') center/cover;
+        }
+
+        .section-title { position: relative; display: inline-block; }
+        .section-title::after {
+            content: ''; position: absolute; bottom: -10px; left: 0;
+            width: 70px; height: 4px; background: #3b82f6; border-radius: 2px;
+        }
+        .section-title.center::after { left: 50%; transform: translateX(-50%); }
+
+        .service-card { transition: all .3s ease; }
+        .service-card:hover { transform: translateY(-6px); }
+
+        /* CLIENT LOGO CARDS */
+        .logo-card {
+            display: flex; align-items: center; justify-content: center;
+            background: #fff; border: 1px solid #e2e8f0; border-radius: 14px;
+            padding: 10px 12px; height: 120px;
+            transition: all .25s ease; position: relative; overflow: hidden;
+        }
+        .logo-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px -10px rgba(59,130,246,.25);
+            border-color: #93c5fd;
+        }
+        .logo-card img {
+            max-width: 90%; max-height: 85%; object-fit: contain;
+            filter: grayscale(15%); transition: filter .25s;
+        }
+        /* Logos that need to be displayed bigger - they come small from source */
+        .logo-card img.logo-boost {
+            max-width: 95%; max-height: 92%;
+            transform: scale(1.15);
+        }
+        /* For logos with dark backgrounds - card becomes dark to match */
+        .logo-card.dark-bg {
+            background: #1a1310;
+            border-color: #2d2420;
+        }
+        .logo-card.dark-bg:hover {
+            border-color: #ea580c;
+        }
+        .logo-card.dark-bg img {
+            max-width: 92%; max-height: 88%;
+        }
+        .logo-card:hover img { filter: grayscale(0%); }
+        .logo-fallback {
+            display: none; align-items: center; justify-content: center;
+            width: 100%; height: 100%; font-weight: 700; color: #1e40af;
+            text-align: center; font-size: .9rem; line-height: 1.15;
+            background: linear-gradient(135deg, #eff6ff, #dbeafe);
+            border-radius: 8px; padding: 6px;
+        }
+
+        .featured-client {
+            background: linear-gradient(135deg, #fff 0%, #f8fafc 100%);
+            border: 1px solid #e2e8f0; transition: all .3s;
+        }
+        .featured-client:hover {
+            border-color: #3b82f6;
+            box-shadow: 0 20px 40px -15px rgba(59,130,246,.2);
+        }
+
+        /* GALLERY */
+        .gallery-item { position: relative; overflow: hidden; border-radius: 16px; }
+        .gallery-item img {
+            width: 100%; height: 100%; object-fit: cover;
+            transition: transform .6s ease;
+        }
+        .gallery-item:hover img { transform: scale(1.06); }
+        .gallery-caption {
+            position: absolute; left: 0; right: 0; bottom: 0;
+            padding: 16px; color: white;
+            background: linear-gradient(to top, rgba(0,0,0,.85) 0%, rgba(0,0,0,0) 100%);
+            opacity: 0; transition: opacity .3s;
+            font-weight: 600; font-size: .9rem;
+        }
+        .gallery-item:hover .gallery-caption { opacity: 1; }
+
+        .stat-number {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* BRAND BADGES */
+        .brand-badge {
+            display: inline-flex; align-items: center;
+            background: #fff; color: #1e293b;
+            border: 1px solid #e2e8f0; border-radius: 8px;
+            padding: 8px 14px; font-weight: 600; font-size: .85rem;
+            transition: all .2s;
+        }
+        .brand-badge:hover {
+            border-color: #3b82f6; color: #2563eb;
+            transform: translateY(-1px);
+        }
+
+        @keyframes pulse-dot {
+            0%,100% { opacity: 1; } 50% { opacity: .4; }
+        }
+        .pulse-dot { animation: pulse-dot 2s ease-in-out infinite; }
+
+        /* === FADE-IN ON SCROLL === */
+        .reveal {
+            opacity: 0; transform: translateY(30px);
+            transition: opacity .8s ease, transform .8s ease;
+        }
+        .reveal.visible {
+            opacity: 1; transform: translateY(0);
+        }
+        .reveal-delay-1 { transition-delay: .1s; }
+        .reveal-delay-2 { transition-delay: .2s; }
+        .reveal-delay-3 { transition-delay: .3s; }
+
+        /* === FLOATING WHATSAPP BUTTON === */
+        .float-wa {
+            position: fixed; bottom: 24px; right: 24px; z-index: 100;
+            width: 60px; height: 60px; border-radius: 50%;
+            background: #25d366; color: white;
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.45);
+            font-size: 28px;
+            transition: all .3s ease;
+            animation: wa-bounce 3s ease-in-out infinite;
+        }
+        .float-wa:hover {
+            transform: scale(1.1);
+            box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
+        }
+        .float-wa::before {
+            content: ''; position: absolute; inset: 0;
+            border-radius: 50%; background: #25d366;
+            animation: wa-pulse 2s ease-out infinite;
+            z-index: -1;
+        }
+        @keyframes wa-pulse {
+            0% { transform: scale(1); opacity: .6; }
+            100% { transform: scale(1.5); opacity: 0; }
+        }
+        @keyframes wa-bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-6px); }
+        }
+
+        /* Tooltip on hover */
+        .float-wa-tooltip {
+            position: fixed; bottom: 38px; right: 95px; z-index: 99;
+            background: #1e293b; color: white;
+            padding: 8px 14px; border-radius: 8px;
+            font-size: 13px; font-weight: 500;
+            opacity: 0; transform: translateX(10px); pointer-events: none;
+            transition: all .25s ease;
+            white-space: nowrap;
+        }
+        .float-wa-tooltip::after {
+            content: ''; position: absolute;
+            right: -6px; top: 50%; transform: translateY(-50%);
+            border-style: solid; border-width: 6px 0 6px 6px;
+            border-color: transparent transparent transparent #1e293b;
+        }
+        .float-wa:hover + .float-wa-tooltip {
+            opacity: 1; transform: translateX(0);
+        }
+        @media (max-width: 640px) {
+            .float-wa-tooltip { display: none; }
+            .float-wa { bottom: 20px; right: 20px; width: 56px; height: 56px; font-size: 26px; }
+        }
+
+        /* === BACK TO TOP BUTTON === */
+        .back-to-top {
+            position: fixed; bottom: 24px; left: 24px; z-index: 100;
+            width: 48px; height: 48px; border-radius: 50%;
+            background: #1e293b; color: white;
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+            opacity: 0; pointer-events: none;
+            transition: all .3s ease;
+            cursor: pointer; border: none;
+        }
+        .back-to-top.visible {
+            opacity: 1; pointer-events: auto;
+        }
+        .back-to-top:hover {
+            background: #2563eb; transform: translateY(-3px);
+        }
+        @media (max-width: 640px) {
+            .back-to-top { bottom: 88px; left: auto; right: 24px; width: 44px; height: 44px; }
+        }
+
+        /* === LIGHTBOX === */
+        .lightbox {
+            position: fixed; inset: 0; z-index: 200;
+            background: rgba(0,0,0,0.92);
+            display: none; align-items: center; justify-content: center;
+            padding: 20px;
+            backdrop-filter: blur(8px);
+        }
+        .lightbox.active { display: flex; }
+        .lightbox-img {
+            max-width: 90vw; max-height: 85vh;
+            object-fit: contain; border-radius: 8px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+            animation: lb-zoom .3s ease;
+        }
+        @keyframes lb-zoom {
+            from { transform: scale(.95); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+        .lightbox-close, .lightbox-nav {
+            position: absolute; background: rgba(255,255,255,.1);
+            border: 1px solid rgba(255,255,255,.2);
+            color: white; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer; transition: all .2s;
+            backdrop-filter: blur(10px);
+        }
+        .lightbox-close:hover, .lightbox-nav:hover {
+            background: rgba(255,255,255,.2); transform: scale(1.05);
+        }
+        .lightbox-close {
+            top: 20px; right: 20px; width: 44px; height: 44px; font-size: 22px;
+        }
+        .lightbox-nav { top: 50%; transform: translateY(-50%); width: 50px; height: 50px; font-size: 22px; }
+        .lightbox-nav.prev { left: 20px; }
+        .lightbox-nav.next { right: 20px; }
+        .lightbox-counter {
+            position: absolute; bottom: 24px; left: 50%; transform: translateX(-50%);
+            color: white; font-weight: 500; font-size: 14px;
+            background: rgba(0,0,0,.5); padding: 6px 14px; border-radius: 20px;
+        }
+        .lightbox-caption {
+            position: absolute; top: 24px; left: 50%; transform: translateX(-50%);
+            color: white; font-weight: 600; font-size: 15px;
+            background: rgba(0,0,0,.5); padding: 8px 18px; border-radius: 20px;
+            max-width: 70%;
+            text-align: center;
+        }
+        .gallery-item { cursor: pointer; }
+        @media (max-width: 640px) {
+            .lightbox-nav { width: 42px; height: 42px; font-size: 18px; }
+            .lightbox-nav.prev { left: 10px; }
+            .lightbox-nav.next { right: 10px; }
+        }
+
+        /* === FAQ ACCORDION === */
+        details.faq-item {
+            background: white; border-radius: 14px; border: 1px solid #e2e8f0;
+            transition: all .25s ease;
+        }
+        details.faq-item[open] {
+            border-color: #3b82f6;
+            box-shadow: 0 10px 30px -10px rgba(59,130,246,0.2);
+        }
+        details.faq-item summary {
+            cursor: pointer; padding: 18px 22px;
+            font-weight: 600; color: #1e293b;
+            list-style: none;
+            display: flex; align-items: center; justify-content: space-between;
+            gap: 12px;
+        }
+        details.faq-item summary::-webkit-details-marker { display: none; }
+        details.faq-item summary::after {
+            content: '+'; font-size: 22px; font-weight: 400;
+            color: #3b82f6;
+            transition: transform .3s ease;
+            line-height: 1;
+        }
+        details.faq-item[open] summary::after {
+            content: '–'; transform: rotate(0deg);
+        }
+        details.faq-item .faq-answer {
+            padding: 0 22px 18px;
+            color: #475569; line-height: 1.65;
+        }
+
+        /* === PROCESS TIMELINE === */
+        .process-step {
+            position: relative; padding-left: 0;
+        }
+        .process-step .step-number {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white;
+            width: 48px; height: 48px;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-weight: 800; font-size: 18px;
+            box-shadow: 0 8px 20px -5px rgba(59,130,246,0.5);
+            position: relative;
+            flex-shrink: 0;
+        }
+
+        html { scroll-behavior: smooth; scroll-padding-top: 70px; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- ==================== NAV ==================== -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex justify-between items-center gap-3">
+            <a href="#" class="flex items-center flex-shrink-0">
+                <img src="img/logo-winpcs.png" alt="Winpc's Computadoras" class="h-12 sm:h-14 w-auto">
+            </a>
+            <div class="hidden md:flex gap-7 text-slate-700 font-medium text-sm">
+                <a href="#servicios" class="hover:text-blue-600 transition">Servicios</a>
+                <a href="#marcas" class="hover:text-blue-600 transition">Marcas</a>
+                <a href="#trabajos" class="hover:text-blue-600 transition">Trabajos</a>
+                <a href="#clientes" class="hover:text-blue-600 transition">Clientes</a>
+                <a href="#contacto" class="hover:text-blue-600 transition">Contacto</a>
+            </div>
+            <a href="https://wa.me/5216642555288?text=Hola%2C%20vi%20su%20informaci%C3%B3n%20de%20contacto%20de%20Winpc%27s%20y%20me%20interesa%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios.%20%C2%BFPodr%C3%ADan%20ayudarme%3F" target="_blank" rel="noopener" class="bg-green-500 hover:bg-green-600 text-white px-4 sm:px-5 py-2.5 rounded-full flex items-center gap-2 text-sm font-medium shadow-md shadow-green-500/30 transition">
+                <i class="fab fa-whatsapp text-lg"></i>
+                <span class="hidden sm:inline">WhatsApp</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <header class="hero-bg text-white py-20 sm:py-28 text-center relative">
+        <div class="max-w-5xl mx-auto px-6 relative z-10">
+            <div class="inline-flex items-center gap-2 bg-blue-500/20 backdrop-blur border border-blue-400/30 px-4 py-1.5 rounded-full text-sm mb-6">
+                <span class="w-2 h-2 bg-green-400 rounded-full pulse-dot"></span>
+                <span>20 años instalando redes profesionales en Tijuana</span>
+            </div>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight tracking-tight">
+                Instalaciones Profesionales<br>
+                <span class="text-blue-300">Certificadas Panduit</span>
+            </h1>
+            <p class="mt-6 text-lg sm:text-xl md:text-2xl text-blue-100 font-light max-w-3xl mx-auto">
+                Cableado Estructurado · CCTV · Control de Acceso · Equipo Informático y Telecomunicación
+            </p>
+            <p class="mt-4 text-blue-200/80 text-base sm:text-lg max-w-2xl mx-auto">
+                Cada instalación viene certificada con equipo Fluke y respaldada con <strong class="text-white">garantía Panduit de hasta 15 años</strong>.
+            </p>
+            <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#servicios" class="bg-white text-blue-700 px-8 py-3.5 rounded-full font-semibold hover:bg-blue-50 transition shadow-lg">Ver servicios</a>
+                <a href="https://wa.me/5216642555288?text=Hola%2C%20vi%20su%20informaci%C3%B3n%20de%20contacto%20de%20Winpc%27s%20y%20me%20interesa%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios.%20%C2%BFPodr%C3%ADan%20ayudarme%3F" target="_blank" rel="noopener" class="bg-green-500 hover:bg-green-600 text-white px-8 py-3.5 rounded-full font-semibold transition flex items-center justify-center gap-2 shadow-lg shadow-green-500/30">
+                    <i class="fab fa-whatsapp text-xl"></i> Cotiza ahora
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== STATS BAR ==================== -->
+    <section class="bg-white border-b border-slate-100">
+        <div class="max-w-6xl mx-auto px-6 py-10 sm:py-12 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <div class="text-3xl sm:text-4xl font-extrabold stat-number" data-count="20" data-suffix="+">0</div>
+                <div class="text-slate-600 text-sm mt-1">Años en el mercado</div>
+            </div>
+            <div>
+                <div class="text-3xl sm:text-4xl font-extrabold stat-number" data-count="4500" data-suffix="+">0</div>
+                <div class="text-slate-600 text-sm mt-1">Nodos certificados</div>
+            </div>
+            <div>
+                <div class="text-3xl sm:text-4xl font-extrabold stat-number" data-count="15">0</div>
+                <div class="text-slate-600 text-sm mt-1">Años de garantía Panduit</div>
+            </div>
+            <div>
+                <div class="text-3xl sm:text-4xl font-extrabold stat-number" data-count="100" data-suffix="+">0</div>
+                <div class="text-slate-600 text-sm mt-1">Clientes atendidos</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICIOS ==================== -->
+    <section id="servicios" class="max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
+        <div class="max-w-3xl mb-12">
+            <h2 class="section-title text-3xl sm:text-4xl font-extrabold text-slate-800">Nuestros Servicios</h2>
+            <p class="text-slate-600 mt-6 text-lg">Soluciones integrales de TI para empresas, oficinas, maquiladoras, Pymes y negocios en Tijuana y Baja California.</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <div class="service-card reveal bg-white p-7 rounded-2xl shadow-sm hover:shadow-xl border border-slate-100">
+                <div class="bg-blue-100 text-blue-600 w-14 h-14 rounded-2xl flex items-center justify-center mb-5">
+                    <i class="fas fa-network-wired text-2xl"></i>
+                </div>
+                <h3 class="font-bold text-xl mb-2 text-slate-800">Cableado Estructurado</h3>
+                <p class="text-slate-600 leading-relaxed">Instalación y certificación de voz y datos con equipo Fluke. Garantía oficial Panduit de hasta 15 años.</p>
+            </div>
+
+            <div class="service-card reveal bg-white p-7 rounded-2xl shadow-sm hover:shadow-xl border border-slate-100">
+                <div class="bg-blue-100 text-blue-600 w-14 h-14 rounded-2xl flex items-center justify-center mb-5">
+                    <i class="fas fa-video text-2xl"></i>
+                </div>
+                <h3 class="font-bold text-xl mb-2 text-slate-800">Circuito Cerrado CCTV</h3>
+                <p class="text-slate-600 leading-relaxed">Cámaras profesionales Hikvision, Dahua, Axis, Pelco, Provision, Epcom e Hilook. Diseño e instalación a medida.</p>
+            </div>
+
+            <div class="service-card reveal bg-white p-7 rounded-2xl shadow-sm hover:shadow-xl border border-slate-100">
+                <div class="bg-blue-100 text-blue-600 w-14 h-14 rounded-2xl flex items-center justify-center mb-5">
+                    <i class="fas fa-fingerprint text-2xl"></i>
+                </div>
+                <h3 class="font-bold text-xl mb-2 text-slate-800">Control de Acceso Industrial</h3>
+                <p class="text-slate-600 leading-relaxed">Sistemas biométricos y de tarjeta para empresas, maquiladoras y oficinas corporativas.</p>
+            </div>
+
+            <div class="service-card reveal bg-white p-7 rounded-2xl shadow-sm hover:shadow-xl border border-slate-100">
+                <div class="bg-blue-100 text-blue-600 w-14 h-14 rounded-2xl flex items-center justify-center mb-5">
+                    <i class="fas fa-wifi text-2xl"></i>
+                </div>
+                <h3 class="font-bold text-xl mb-2 text-slate-800">Redes WiFi y Enlaces</h3>
+                <p class="text-slate-600 leading-relaxed">Switches y routers Cisco, antenas y sistemas WiFi Ubiquiti, Mikrotik, Cambium Networks y Altai Technologies.</p>
+            </div>
+
+            <div class="service-card reveal bg-white p-7 rounded-2xl shadow-sm hover:shadow-xl border border-slate-100">
+                <div class="bg-blue-100 text-blue-600 w-14 h-14 rounded-2xl flex items-center justify-center mb-5">
+                    <i class="fas fa-desktop text-2xl"></i>
+                </div>
+                <h3 class="font-bold text-xl mb-2 text-slate-800">Venta de Equipo Informático</h3>
+                <p class="text-slate-600 leading-relaxed">Computadoras, laptops, servidores, monitores e impresoras. Dell, HP, Lenovo, Asus, Apple y más.</p>
+            </div>
+
+            <div class="service-card reveal bg-white p-7 rounded-2xl shadow-sm hover:shadow-xl border border-slate-100">
+                <div class="bg-blue-100 text-blue-600 w-14 h-14 rounded-2xl flex items-center justify-center mb-5">
+                    <i class="fas fa-volume-high text-2xl"></i>
+                </div>
+                <h3 class="font-bold text-xl mb-2 text-slate-800">Videoconferencia y Sonido</h3>
+                <p class="text-slate-600 leading-relaxed">Sistemas profesionales de videoconferencia y sonido ambiental para salas, oficinas y negocios.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== MARCAS QUE MANEJAMOS ==================== -->
+    <section id="marcas" class="bg-gradient-to-br from-slate-900 to-blue-950 text-white py-16 sm:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12">
+                <h2 class="section-title center text-3xl sm:text-4xl font-extrabold text-white">Equipo y marcas que manejamos</h2>
+                <p class="text-slate-300 mt-6 max-w-2xl mx-auto">Trabajamos con las marcas líderes del mercado para garantizar calidad, durabilidad y soporte.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-7">
+                    <div class="flex items-center gap-3 mb-5">
+                        <div class="bg-blue-500/20 w-11 h-11 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-network-wired text-blue-300"></i>
+                        </div>
+                        <h3 class="font-bold text-lg">Telecomunicaciones</h3>
+                    </div>
+                    <p class="text-slate-300 text-sm mb-4">Switches, routers, antenas y cableado certificado.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="brand-badge">Cisco</span>
+                        <span class="brand-badge">Ubiquiti</span>
+                        <span class="brand-badge">Mikrotik</span>
+                        <span class="brand-badge">Cambium</span>
+                        <span class="brand-badge">Altai</span>
+                        <span class="brand-badge">D-Link</span>
+                        <span class="brand-badge">TP-Link</span>
+                        <span class="brand-badge">Linksys</span>
+                        <span class="brand-badge">Panduit</span>
+                        <span class="brand-badge">Belden</span>
+                        <span class="brand-badge">Leviton</span>
+                        <span class="brand-badge">Linkedpro</span>
+                        <span class="brand-badge">Intellinet</span>
+                    </div>
+                </div>
+
+                <div class="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-7">
+                    <div class="flex items-center gap-3 mb-5">
+                        <div class="bg-blue-500/20 w-11 h-11 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-video text-blue-300"></i>
+                        </div>
+                        <h3 class="font-bold text-lg">Circuito Cerrado CCTV</h3>
+                    </div>
+                    <p class="text-slate-300 text-sm mb-4">Cámaras y sistemas de videovigilancia profesional.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="brand-badge">Hikvision</span>
+                        <span class="brand-badge">Dahua</span>
+                        <span class="brand-badge">Axis</span>
+                        <span class="brand-badge">Pelco</span>
+                        <span class="brand-badge">Provision</span>
+                        <span class="brand-badge">Epcom</span>
+                        <span class="brand-badge">Hilook</span>
+                    </div>
+                </div>
+
+                <div class="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-7">
+                    <div class="flex items-center gap-3 mb-5">
+                        <div class="bg-blue-500/20 w-11 h-11 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-desktop text-blue-300"></i>
+                        </div>
+                        <h3 class="font-bold text-lg">Equipo Informático</h3>
+                    </div>
+                    <p class="text-slate-300 text-sm mb-4">Computadoras, laptops, servidores y periféricos.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="brand-badge">Dell</span>
+                        <span class="brand-badge">HP</span>
+                        <span class="brand-badge">Lenovo</span>
+                        <span class="brand-badge">Asus</span>
+                        <span class="brand-badge">Apple</span>
+                        <span class="brand-badge">MSI</span>
+                        <span class="brand-badge">Toshiba</span>
+                        <span class="brand-badge">LG</span>
+                        <span class="brand-badge">Samsung</span>
+                        <span class="brand-badge">Panasonic</span>
+                        <span class="brand-badge">Epson</span>
+                        <span class="brand-badge">Brother</span>
+                        <span class="brand-badge">Intel</span>
+                        <span class="brand-badge">AMD</span>
+                        <span class="brand-badge">Nvidia</span>
+                        <span class="brand-badge">Ryzen</span>
+                        <span class="brand-badge">Gigabyte</span>
+                        <span class="brand-badge">Alienware</span>
+                        <span class="brand-badge">Thermaltake</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CASO PRÁCTICO ==================== -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
+        <div class="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+            <div>
+                <div class="inline-block bg-blue-100 text-blue-700 font-semibold text-sm px-4 py-1.5 rounded-full mb-5">
+                    ¿Por qué certificar tu red?
+                </div>
+                <h2 class="section-title text-3xl sm:text-4xl font-extrabold text-slate-800">El cableado correcto cuesta menos a la larga</h2>
+                <div class="space-y-5 text-slate-600 mt-8 leading-relaxed">
+                    <p>Por experiencia en empresas con miles de nodos de red, recomendamos que toda inversión en cableado de voz y datos se haga con <strong class="text-slate-800">personal certificado</strong> y con <strong class="text-slate-800">equipo de medición Fluke</strong>.</p>
+                    <p>El equipo Fluke entrega reportes de velocidad, inserción de remate en jacks y cualquier detalle que disminuya el rendimiento — asegurando la máxima velocidad del cable y permitiendo otorgar <strong class="text-slate-800">15 años de garantía</strong>.</p>
+                    <div class="bg-blue-50 border-l-4 border-blue-500 p-5 rounded-r-xl">
+                        <p class="text-slate-800 font-semibold mb-2">La diferencia es real:</p>
+                        <ul class="space-y-2 text-sm">
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-check-circle text-green-600 mt-1"></i>
+                                <span>Con material certificado (<strong>Panduit, Belden, Leviton</strong>): el cable corre a <strong>1000 Mbps</strong></span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-xmark-circle text-red-500 mt-1"></i>
+                                <span>Con marcas no certificadas: la red corre solo a <strong>200–300 Mbps</strong></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:order-first">
+                <img src="img/work-04-fluke.jpg" alt="Equipo Fluke DSX-600 certificando un nodo de red en piso 11 Integon" class="rounded-2xl shadow-2xl w-full object-cover">
+                <p class="text-xs text-slate-500 mt-3 text-center italic">Certificación real con Fluke DSX-600 — Proyecto Integon, piso 11</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CERTIFICACIONES ==================== -->
+    <section class="bg-gradient-to-br from-slate-100 to-blue-50 py-16 sm:py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="section-title center text-3xl sm:text-4xl font-extrabold text-slate-800">Certificaciones Oficiales</h2>
+                <p class="text-slate-600 mt-6 max-w-2xl mx-auto">Reconocidos por Panduit Corp. como socio certificado desde 2018.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8 items-center">
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden p-3">
+                    <img src="img/cert-panduit.jpg" alt="Certificado oficial Panduit Corp. para Winpcs Computadoras - Tijuana" class="w-full rounded-xl">
+                </div>
+                <div class="space-y-5">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex items-start gap-4">
+                        <div class="bg-blue-100 text-blue-700 w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-award text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">Panduit Certified Partner</h3>
+                            <p class="text-slate-600 text-sm mt-1">Socio registrado desde el <strong>9 de mayo de 2018</strong>. Autorizados para desplegar soluciones Panduit® Network Infrastructure y participar en el programa de garantía Certification Plus℠.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                        <div class="flex items-start gap-4 mb-3">
+                            <div class="bg-blue-100 text-blue-700 w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-certificate text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-800">Técnicos certificados Panduit</h3>
+                                <p class="text-slate-600 text-sm mt-1">Nuestro equipo cuenta con certificación oficial Panduit en el curso <strong>Network Infrastructure Cabling Deploy</strong>, garantizando que cada instalación se realiza bajo los más altos estándares de la industria.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TRABAJOS ==================== -->
+    <section id="trabajos" class="max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
+        <div class="text-center mb-12">
+            <h2 class="section-title center text-3xl sm:text-4xl font-extrabold text-slate-800">Algunos de nuestros trabajos</h2>
+            <p class="text-slate-600 mt-6 max-w-2xl mx-auto">Proyectos reales de cableado estructurado, racks, equipos de telecomunicación y certificación.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5" id="gallery">
+            <div class="gallery-item reveal aspect-[4/5] shadow-md" data-full="img/work-03-opticom.jpg" data-caption="Panel Panduit Opticom · Cableado certificado">
+                <img src="img/work-03-opticom.jpg" alt="Panel Panduit Opticom con patch cords organizados">
+                <div class="gallery-caption">Panel Panduit Opticom · Cableado certificado</div>
+            </div>
+            <div class="gallery-item reveal reveal-delay-1 aspect-[4/5] shadow-md" data-full="img/work-01-rack-cables.jpg" data-caption="Cableado Cat 6 organizado · Patch panel Panduit">
+                <img src="img/work-01-rack-cables.jpg" alt="Rack con cables Cat 6 organizados profesionalmente">
+                <div class="gallery-caption">Cableado Cat 6 organizado · Patch panel Panduit</div>
+            </div>
+            <div class="gallery-item reveal reveal-delay-2 aspect-[4/5] shadow-md" data-full="img/work-05-server-rack.jpg" data-caption="Rack de telecomunicaciones · Switches gestionados">
+                <img src="img/work-05-server-rack.jpg" alt="Rack de servidores con switches y administración de cables">
+                <div class="gallery-caption">Rack de telecomunicaciones · Switches gestionados</div>
+            </div>
+            <div class="gallery-item reveal aspect-[4/5] shadow-md" data-full="img/work-02-patchpanel.jpg" data-caption="Etiquetado e identificación de cada nodo">
+                <img src="img/work-02-patchpanel.jpg" alt="Patch panel etiquetado con cables identificados uno a uno">
+                <div class="gallery-caption">Etiquetado e identificación de cada nodo</div>
+            </div>
+            <div class="gallery-item reveal reveal-delay-1 aspect-[4/5] shadow-md" data-full="img/work-07-cable-management.jpg" data-caption="Administración doble rack · Cableado vertical">
+                <img src="img/work-07-cable-management.jpg" alt="Administración avanzada de cables en doble rack">
+                <div class="gallery-caption">Administración doble rack · Cableado vertical</div>
+            </div>
+            <div class="gallery-item reveal reveal-delay-2 aspect-[4/5] shadow-md" data-full="img/work-08-equipment-rack.jpg" data-caption="Equipo Xorcom · Panduit Opticom · Epcom">
+                <img src="img/work-08-equipment-rack.jpg" alt="Equipo de telecomunicaciones en rack con sistema Xorcom y Panduit Opticom">
+                <div class="gallery-caption">Equipo Xorcom · Panduit Opticom · Epcom</div>
+            </div>
+            <div class="gallery-item reveal aspect-[4/5] shadow-md" data-full="img/work-06-conference-room.jpg" data-caption="Sala de juntas · Videoconferencia y AV">
+                <img src="img/work-06-conference-room.jpg" alt="Sala de juntas equipada con sistema de videoconferencia y monitores">
+                <div class="gallery-caption">Sala de juntas · Videoconferencia y AV</div>
+            </div>
+            <div class="gallery-item reveal reveal-delay-1 aspect-[4/5] shadow-md" data-full="img/hero-bg.jpg" data-caption="Charola de cableado · Distribución por pisos">
+                <img src="img/hero-bg.jpg" alt="Charola con cableado estructurado de gran capacidad">
+                <div class="gallery-caption">Charola de cableado · Distribución por pisos</div>
+            </div>
+            <div class="reveal reveal-delay-2 aspect-[4/5] shadow-md rounded-2xl bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center p-6">
+                <div class="text-white text-center">
+                    <i class="fas fa-images text-3xl mb-3 opacity-80"></i>
+                    <div class="font-bold text-lg">Y muchos proyectos más</div>
+                    <div class="text-sm opacity-80 mt-2">Cada cliente recibe el mismo nivel de detalle y certificación</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CLIENTES ==================== -->
+    <section id="clientes" class="bg-white py-16 sm:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12">
+                <h2 class="section-title center text-3xl sm:text-4xl font-extrabold text-slate-800">Algunos de nuestros clientes</h2>
+                <p class="text-slate-600 mt-6 max-w-2xl mx-auto">Empresas, maquiladoras y negocios que confían en Winpc's para su infraestructura tecnológica.</p>
+            </div>
+
+            <!-- CLIENTES DESTACADOS -->
+            <div class="grid sm:grid-cols-2 gap-5 sm:gap-6 mb-10 sm:mb-12">
+                <div class="featured-client reveal p-6 sm:p-8 rounded-2xl text-center">
+                    <div class="h-20 sm:h-24 flex items-center justify-center mb-5">
+                        <img src="https://cdn.worldvectorlogo.com/logos/integon.svg" alt="Integon"
+                             class="max-h-full max-w-[260px] object-contain"
+                             onerror="this.style.display='none';this.parentNode.querySelector('.fb').style.display='flex'">
+                        <div class="fb hidden text-3xl sm:text-4xl font-extrabold text-blue-700">Integon</div>
+                    </div>
+                    <div class="inline-flex items-center gap-2 bg-blue-100 text-blue-700 text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full">
+                        <i class="fas fa-check-circle"></i>
+                        + 4,000 nodos certificados
+                    </div>
+                </div>
+                <div class="featured-client reveal p-6 sm:p-8 rounded-2xl text-center">
+                    <div class="h-20 sm:h-24 flex items-center justify-center mb-5">
+                        <img src="img/clients/giga-solutions.png" alt="Giga Solutions"
+                             class="max-h-full max-w-[260px] object-contain"
+                             onerror="this.style.display='none';this.parentNode.querySelector('.fb').style.display='flex'">
+                        <div class="fb hidden text-3xl sm:text-4xl font-extrabold text-blue-700">Giga Solutions</div>
+                    </div>
+                    <div class="inline-flex items-center gap-2 bg-blue-100 text-blue-700 text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full">
+                        <i class="fas fa-check-circle"></i>
+                        500 nodos certificados
+                    </div>
+                </div>
+            </div>
+
+            <!-- GRID DE LOGOS -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-5 mb-10">
+
+                <div class="logo-card reveal">
+                    <img src="https://hasesor.com/wp-content/uploads/2021/04/3d-hild-web3-1024x668.png" alt="Hildebrando"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="logo-fallback">Hildebrando</div>
+                </div>
+
+                <div class="logo-card reveal">
+                    <img src="https://refaccionariasdelvallepg.s3.us-west-1.amazonaws.com/get_logos/logo_mobil.webp" alt="Refaccionarias del Valle"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="logo-fallback">Refaccionarias<br>del Valle</div>
+                </div>
+
+                <div class="logo-card reveal">
+                    <img src="img/clients/las-pulgas.png" alt="Las Pulgas Disco Club"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="logo-fallback">Las Pulgas<br>Disco Club</div>
+                </div>
+
+                <div class="logo-card reveal">
+                    <img src="https://superluchas.com/cl_resize/l1Im1YVjoI0_crUBUcp1nznyOMmXgeIhqbj06Agj1gY/rs:fill:500:0/g:ce/q:70/aHR0cHM6Ly9zMy5zdXBlcmx1Y2hhcy5jb20vMjAyNS8wMy9Mb2dvLUNNTEwtNjAweDYwMC5qcGc" alt="Grupo Lutteroth"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="logo-fallback">Grupo Lutteroth</div>
+                </div>
+
+                <div class="logo-card reveal">
+                    <img src="https://1000marcas.net/wp-content/uploads/2021/06/Ashley-HomeStore-log%D0%BE.png" alt="Mueblerías Ashley"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="logo-fallback">Mueblerías<br>Ashley</div>
+                </div>
+
+                <div class="logo-card reveal">
+                    <img src="https://colchonesberun.com/cdn/shop/files/Logo_Colchones_Berun_2000_x_2000.png?v=1719346605" alt="Mueblerías Berun"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="logo-fallback">Mueblerías<br>Berun</div>
+                </div>
+
+                <div class="logo-card reveal">
+                    <img src="img/clients/tpv.png" alt="TPV Vision Innovator" class="logo-boost"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="logo-fallback">TPV Vision<br>Innovator</div>
+                </div>
+
+                <div class="logo-card reveal">
+                    <img src="https://cdn.worldvectorlogo.com/logos/smk.svg" alt="SMK Maquiladora" class="logo-boost"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="logo-fallback">SMK<br>Maquiladora</div>
+                </div>
+
+                <div class="logo-card reveal">
+                    <img src="https://cdn.worldvectorlogo.com/logos/sigmatron.svg" alt="Sigmatron" class="logo-boost"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="logo-fallback">Sigmatron</div>
+                </div>
+
+                <div class="logo-card reveal">
+                    <img src="img/clients/suajes-del-norte.png" alt="Suajes del Norte (SUNORT)" class="logo-boost"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="logo-fallback">Suajes<br>del Norte</div>
+                </div>
+
+                <div class="logo-card reveal">
+                    <img src="img/clients/distrimedh.png" alt="DistriMedh"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="logo-fallback">DistriMedh</div>
+                </div>
+
+                <div class="logo-card reveal">
+                    <img src="https://grupoeco.com.mx/wp-content/uploads/2020/01/eco-01.png" alt="Gasolinera ECO"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="logo-fallback">Gasolinera<br>ECO</div>
+                </div>
+
+                <div class="logo-card reveal">
+                    <img src="img/clients/ocean-inn.png" alt="Ocean Inn"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="logo-fallback">Ocean Inn</div>
+                </div>
+
+                <div class="logo-card reveal">
+                    <img src="img/clients/paper-source.png" alt="Paper Source" class="logo-boost"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="logo-fallback">Paper Source</div>
+                </div>
+
+                <div class="logo-card reveal">
+                    <img src="https://bateriasmexico.com/wp-content/uploads/2025/05/Baterias-Thumb.png" alt="Baterías de México"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="logo-fallback">Baterías<br>de México</div>
+                </div>
+
+                <div class="logo-card reveal">
+                    <img src="img/clients/altiza.png" alt="Altiza Distribuidores"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="logo-fallback">Altiza<br>Distribuidores</div>
+                </div>
+
+                <div class="logo-card reveal">
+                    <img src="img/clients/rosarito.png" alt="Empacadora Rosarito"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="logo-fallback">Empacadora<br>Rosarito</div>
+                </div>
+
+                <div class="logo-card reveal">
+                    <img src="img/clients/grupo-consultor.png" alt="Grupo Consultor"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="logo-fallback">Grupo<br>Consultor</div>
+                </div>
+
+                <div class="logo-card reveal">
+                    <img src="img/clients/manejo-ensambles.png" alt="Manejo de Ensambles"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="logo-fallback">Manejo de<br>Ensambles</div>
+                </div>
+
+                <div class="logo-card dark-bg reveal">
+                    <img src="img/clients/le-conteiner.png" alt="Le Conteiner Resta+Bar"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="logo-fallback">Le Conteiner<br>Resta+Bar</div>
+                </div>
+
+                <div class="logo-card reveal">
+                    <img src="img/clients/copeo-bar.png" alt="el Copeo Bar"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="logo-fallback">el Copeo Bar</div>
+                </div>
+
+                <div class="logo-card reveal">
+                    <img src="img/clients/serviplagas.png" alt="Serviplagas"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                    <div class="logo-fallback">Serviplagas</div>
+                </div>
+            </div>
+
+            <!-- LISTA DETALLADA DE SERVICIOS POR CLIENTE -->
+            <details class="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden">
+                <summary class="cursor-pointer px-6 py-4 font-semibold text-slate-700 hover:bg-slate-100 flex items-center justify-between">
+                    <span><i class="fas fa-list-check text-blue-600 mr-2"></i>Ver detalle de servicios por cliente</span>
+                    <i class="fas fa-chevron-down text-slate-400 text-sm"></i>
+                </summary>
+                <div class="px-6 py-5 grid sm:grid-cols-2 gap-x-8 gap-y-2 text-sm text-slate-600 border-t border-slate-200">
+                    <p><strong class="text-slate-800">Integon:</strong> +4,000 nodos certificados</p>
+                    <p><strong class="text-slate-800">Giga Solutions:</strong> 500 nodos certificados</p>
+                    <p><strong class="text-slate-800">Hildebrando:</strong> soporte a equipos</p>
+                    <p><strong class="text-slate-800">Refaccionarias del Valle:</strong> venta de equipos, CCTV, impresoras, control de acceso</p>
+                    <p><strong class="text-slate-800">Las Pulgas Disco Club:</strong> CCTV, cableado, equipo informático</p>
+                    <p><strong class="text-slate-800">Grupo Lutteroth</strong></p>
+                    <p><strong class="text-slate-800">Mueblerías Ashley y Berun:</strong> CCTV, sonido ambiental</p>
+                    <p><strong class="text-slate-800">TPV Vision Innovator:</strong> venta de equipo y CCTV</p>
+                    <p><strong class="text-slate-800">SMK Maquiladora:</strong> CCTV y venta de equipo</p>
+                    <p><strong class="text-slate-800">Sigmatron Maquiladora:</strong> cableado y equipo</p>
+                    <p><strong class="text-slate-800">Suajes del Norte:</strong> cableado estructurado, CCTV</p>
+                    <p><strong class="text-slate-800">DistriMedh:</strong> venta de equipo informático</p>
+                    <p><strong class="text-slate-800">Gasolinera ECO:</strong> CCTV, equipo informático, WLAN</p>
+                    <p><strong class="text-slate-800">Ocean Inn:</strong> venta de equipo informático</p>
+                    <p><strong class="text-slate-800">Paper Source:</strong> CCTV, venta de equipo</p>
+                    <p><strong class="text-slate-800">Baterías de México:</strong> cableado, venta de equipo, servidores</p>
+                    <p><strong class="text-slate-800">Serviplagas:</strong> equipo informático</p>
+                    <p><strong class="text-slate-800">Altiza Distribuidora:</strong> CCTV, cableado, venta de equipo</p>
+                    <p><strong class="text-slate-800">Empacadora Rosarito:</strong> CCTV, venta de equipo informático</p>
+                    <p><strong class="text-slate-800">Grupo Consultor:</strong> venta de equipo, cableado estructurado</p>
+                    <p><strong class="text-slate-800">Manejo de Ensambles:</strong> cableado y venta de equipo</p>
+                    <p><strong class="text-slate-800">Le Conteiner Resta+Bar:</strong> CCTV, equipo informático</p>
+                    <p><strong class="text-slate-800">el Copeo Bar:</strong> CCTV, equipo informático</p>
+                </div>
+            </details>
+        </div>
+    </section>
+
+    <!-- ==================== PROCESO DE TRABAJO ==================== -->
+    <section class="bg-gradient-to-br from-slate-50 to-blue-50 py-16 sm:py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-14">
+                <h2 class="section-title center text-3xl sm:text-4xl font-extrabold text-slate-800">Cómo trabajamos</h2>
+                <p class="text-slate-600 mt-6 max-w-2xl mx-auto">Un proceso probado por 20 años, transparente de principio a fin.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-5 lg:gap-3">
+                <div class="reveal bg-white rounded-2xl p-6 shadow-sm border border-slate-100 process-step">
+                    <div class="step-number mb-5">1</div>
+                    <h3 class="font-bold text-slate-800 mb-2">Diagnóstico</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Visitamos tu sitio, evaluamos tus necesidades y entendemos tu proyecto.</p>
+                </div>
+
+                <div class="reveal reveal-delay-1 bg-white rounded-2xl p-6 shadow-sm border border-slate-100 process-step">
+                    <div class="step-number mb-5">2</div>
+                    <h3 class="font-bold text-slate-800 mb-2">Cotización</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Te entregamos una propuesta clara, detallada y sin sorpresas.</p>
+                </div>
+
+                <div class="reveal reveal-delay-2 bg-white rounded-2xl p-6 shadow-sm border border-slate-100 process-step">
+                    <div class="step-number mb-5">3</div>
+                    <h3 class="font-bold text-slate-800 mb-2">Instalación</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Nuestros técnicos certificados ejecutan el proyecto con material de marca.</p>
+                </div>
+
+                <div class="reveal reveal-delay-3 bg-white rounded-2xl p-6 shadow-sm border border-slate-100 process-step">
+                    <div class="step-number mb-5">4</div>
+                    <h3 class="font-bold text-slate-800 mb-2">Certificación</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Probamos cada nodo con equipo Fluke y entregamos el reporte completo.</p>
+                </div>
+
+                <div class="reveal reveal-delay-3 bg-gradient-to-br from-blue-600 to-blue-800 text-white rounded-2xl p-6 shadow-lg process-step">
+                    <div class="step-number mb-5" style="background:white;color:#1d4ed8">5</div>
+                    <h3 class="font-bold mb-2">Garantía Panduit</h3>
+                    <p class="text-blue-100 text-sm leading-relaxed">Tu instalación queda respaldada con hasta 15 años de garantía oficial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FAQ ==================== -->
+    <section id="faq" class="bg-white py-16 sm:py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12">
+                <h2 class="section-title center text-3xl sm:text-4xl font-extrabold text-slate-800">Preguntas frecuentes</h2>
+                <p class="text-slate-600 mt-6">Lo que más nos preguntan nuestros clientes.</p>
+            </div>
+
+            <div class="space-y-4">
+                <details class="faq-item reveal">
+                    <summary>¿Qué cubre la garantía Panduit de 15 años?</summary>
+                    <div class="faq-answer">La garantía cubre el desempeño completo del sistema de cableado: cable, conectores, jacks, patch panels y patch cords. Aplica únicamente cuando se usa material certificado Panduit y se realiza la instalación con técnicos capacitados, como nosotros. Te entregamos el certificado oficial registrado a tu nombre.</div>
+                </details>
+
+                <details class="faq-item reveal">
+                    <summary>¿Atienden empresas fuera de Tijuana?</summary>
+                    <div class="faq-answer">Sí. Damos servicio en toda la región de Baja California: Tijuana, Rosarito, Tecate, Ensenada y Mexicali. Para proyectos grandes de maquiladoras también nos desplazamos a otros estados con acuerdo previo.</div>
+                </details>
+
+                <details class="faq-item reveal">
+                    <summary>¿Cuánto tarda una instalación de cableado estructurado?</summary>
+                    <div class="faq-answer">Depende del número de nodos y la complejidad del sitio. Una oficina de 30–50 nodos típicamente toma de 3 a 7 días. Proyectos de maquiladora con cientos de nodos pueden tomar de 2 a 4 semanas. Al darte la cotización te confirmamos un cronograma realista.</div>
+                </details>
+
+                <details class="faq-item reveal">
+                    <summary>¿Por qué certificar el cableado con Fluke?</summary>
+                    <div class="faq-answer">La certificación con Fluke DSX-600 verifica que cada nodo cumple con el estándar TIA Cat 6 (o el que apliques). Sin esa prueba, no sabes si tu red va a correr a 1000 Mbps o a 200 Mbps cuando la cargues. Además, es requisito para que Panduit emita la garantía oficial de 15 años.</div>
+                </details>
+
+                <details class="faq-item reveal">
+                    <summary>¿Manejan venta de equipo además de instalaciones?</summary>
+                    <div class="faq-answer">Sí. Vendemos computadoras, laptops, servidores, monitores, impresoras y accesorios de marcas como Dell, HP, Lenovo, Asus, Apple, Epson, Brother, entre otras. También cámaras CCTV (Hikvision, Dahua, Axis), equipo de red (Cisco, Ubiquiti, Mikrotik) y todo lo necesario para tu infraestructura.</div>
+                </details>
+
+                <details class="faq-item reveal">
+                    <summary>¿Cómo solicito una cotización?</summary>
+                    <div class="faq-answer">Lo más rápido es por <a href="https://wa.me/5216642555288?text=Hola%2C%20vi%20su%20informaci%C3%B3n%20de%20contacto%20de%20Winpc%27s%20y%20me%20interesa%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios.%20%C2%BFPodr%C3%ADan%20ayudarme%3F" target="_blank" rel="noopener" class="text-blue-600 font-semibold underline">WhatsApp</a>. También puedes llamarnos a cualquiera de nuestras 3 líneas. Te respondemos el mismo día y, para proyectos grandes, agendamos una visita sin costo.</div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA ==================== -->
+    <section class="bg-gradient-to-br from-blue-600 to-blue-800 py-14">
+        <div class="max-w-4xl mx-auto px-6 text-center text-white">
+            <h2 class="text-2xl sm:text-3xl font-extrabold mb-3">¿Necesitas cotizar un proyecto?</h2>
+            <p class="text-blue-100 mb-8">Te asesoramos sin costo. Respuesta el mismo día.</p>
+            <a href="https://wa.me/5216642555288?text=Hola%2C%20vi%20su%20informaci%C3%B3n%20de%20contacto%20de%20Winpc%27s%20y%20me%20interesa%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios.%20%C2%BFPodr%C3%ADan%20ayudarme%3F" target="_blank" rel="noopener" class="inline-flex items-center gap-3 bg-white text-blue-700 px-8 py-3.5 rounded-full font-semibold hover:bg-blue-50 transition shadow-lg">
+                <i class="fab fa-whatsapp text-xl text-green-500"></i> Escríbenos por WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACTO ==================== -->
+    <section id="contacto" class="bg-slate-900 text-white py-16 sm:py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="section-title center text-3xl sm:text-4xl font-extrabold">Contáctanos</h2>
+                <p class="text-slate-300 mt-6">Tres líneas a tu disposición y atención por WhatsApp.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
+                <a href="tel:+526649730757" class="bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/30 rounded-2xl p-6 text-center transition">
+                    <div class="bg-blue-500/20 w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-phone text-blue-300"></i>
+                    </div>
+                    <div class="text-xs uppercase tracking-wider text-slate-400 mb-1">Tel. Oficina</div>
+                    <div class="font-semibold">(664) 973-0757</div>
+                </a>
+
+                <a href="tel:+526646863787" class="bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/30 rounded-2xl p-6 text-center transition">
+                    <div class="bg-blue-500/20 w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-phone text-blue-300"></i>
+                    </div>
+                    <div class="text-xs uppercase tracking-wider text-slate-400 mb-1">Tel. Directo</div>
+                    <div class="font-semibold">(664) 686-3787</div>
+                </a>
+
+                <a href="tel:+526642555288" class="bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/30 rounded-2xl p-6 text-center transition">
+                    <div class="bg-blue-500/20 w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-phone text-blue-300"></i>
+                    </div>
+                    <div class="text-xs uppercase tracking-wider text-slate-400 mb-1">Tel. Ventas</div>
+                    <div class="font-semibold">(664) 255-5288</div>
+                </a>
+
+                <a href="https://wa.me/5216642555288?text=Hola%2C%20vi%20su%20informaci%C3%B3n%20de%20contacto%20de%20Winpc%27s%20y%20me%20interesa%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios.%20%C2%BFPodr%C3%ADan%20ayudarme%3F" target="_blank" rel="noopener" class="bg-green-500/10 hover:bg-green-500/20 border border-green-500/30 hover:border-green-500/60 rounded-2xl p-6 text-center transition">
+                    <div class="bg-green-500/20 w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-3">
+                        <i class="fab fa-whatsapp text-green-400 text-xl"></i>
+                    </div>
+                    <div class="text-xs uppercase tracking-wider text-slate-400 mb-1">WhatsApp</div>
+                    <div class="font-semibold">Escríbenos</div>
+                </a>
+            </div>
+
+            <div class="max-w-2xl mx-auto mt-10 bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
+                <div class="bg-blue-500/20 w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-3">
+                    <i class="fas fa-location-dot text-blue-300"></i>
+                </div>
+                <div class="text-xs uppercase tracking-wider text-slate-400 mb-1">Oficina</div>
+                <div class="font-semibold">Calle Unión #2192 int. 8</div>
+                <div class="text-slate-300 text-sm">Col. Marrón · Tijuana, Baja California</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-slate-950 text-slate-400 py-10 border-t border-white/5">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-5 text-sm">
+            <div class="flex items-center gap-3">
+                <img src="img/logo-winpcs.png" alt="Winpc's Computadoras" class="h-10 w-auto opacity-90">
+                <div class="hidden sm:block">
+                    <div class="text-white font-semibold text-sm">Soluciones Tecnológicas</div>
+                    <div class="text-xs">Tijuana, Baja California · Desde 2005</div>
+                </div>
+            </div>
+            <div class="text-xs text-center sm:text-right">
+                © 2026 Winpc's Computadoras<br>
+                <span class="opacity-70">Instalaciones profesionales certificadas Panduit</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== FLOATING BUTTONS ==================== -->
+    <a href="https://wa.me/5216642555288?text=Hola%2C%20vi%20su%20informaci%C3%B3n%20de%20contacto%20de%20Winpc%27s%20y%20me%20interesa%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios.%20%C2%BFPodr%C3%ADan%20ayudarme%3F" target="_blank" rel="noopener" class="float-wa" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <div class="float-wa-tooltip">¿Necesitas ayuda? Escríbenos</div>
+
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ==================== LIGHTBOX ==================== -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+        <div class="lightbox-caption" id="lbCaption"></div>
+        <button class="lightbox-close" id="lbClose" aria-label="Cerrar">
+            <i class="fas fa-xmark"></i>
+        </button>
+        <button class="lightbox-nav prev" id="lbPrev" aria-label="Anterior">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <img class="lightbox-img" id="lbImg" alt="">
+        <button class="lightbox-nav next" id="lbNext" aria-label="Siguiente">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="lightbox-counter" id="lbCounter"></div>
+    </div>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <script>
+    // ============ ANIMATED COUNTERS ============
+    (function() {
+        const counters = document.querySelectorAll('.stat-number[data-count]');
+        if (!counters.length) return;
+
+        function animateCounter(el) {
+            const target = parseInt(el.dataset.count, 10);
+            const suffix = el.dataset.suffix || '';
+            const duration = 1800;
+            const startTime = performance.now();
+
+            function update(now) {
+                const elapsed = now - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                const eased = 1 - Math.pow(1 - progress, 3);
+                const current = Math.floor(eased * target);
+                el.textContent = current.toLocaleString('es-MX') + suffix;
+                if (progress < 1) {
+                    requestAnimationFrame(update);
+                } else {
+                    el.textContent = target.toLocaleString('es-MX') + suffix;
+                }
+            }
+            requestAnimationFrame(update);
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    animateCounter(entry.target);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.4 });
+
+        counters.forEach((c) => observer.observe(c));
+    })();
+
+    // ============ REVEAL ON SCROLL ============
+    (function() {
+        const reveals = document.querySelectorAll('.reveal');
+        if (!reveals.length) return;
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+
+        reveals.forEach((el) => observer.observe(el));
+    })();
+
+    // ============ BACK TO TOP ============
+    (function() {
+        const btn = document.getElementById('backToTop');
+        if (!btn) return;
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 600) {
+                btn.classList.add('visible');
+            } else {
+                btn.classList.remove('visible');
+            }
+        }, { passive: true });
+
+        btn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    })();
+
+    // ============ LIGHTBOX ============
+    (function() {
+        const items = document.querySelectorAll('.gallery-item[data-full]');
+        if (!items.length) return;
+
+        const lb = document.getElementById('lightbox');
+        const lbImg = document.getElementById('lbImg');
+        const lbCaption = document.getElementById('lbCaption');
+        const lbCounter = document.getElementById('lbCounter');
+        const lbClose = document.getElementById('lbClose');
+        const lbPrev = document.getElementById('lbPrev');
+        const lbNext = document.getElementById('lbNext');
+
+        let currentIndex = 0;
+        const slides = Array.from(items).map(it => ({
+            src: it.dataset.full,
+            caption: it.dataset.caption || ''
+        }));
+
+        function open(index) {
+            currentIndex = index;
+            update();
+            lb.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function close() {
+            lb.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function update() {
+            lbImg.src = slides[currentIndex].src;
+            lbCaption.textContent = slides[currentIndex].caption;
+            lbCounter.textContent = (currentIndex + 1) + ' / ' + slides.length;
+        }
+
+        function prev() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            update();
+        }
+
+        function next() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            update();
+        }
+
+        items.forEach((item, i) => {
+            item.addEventListener('click', () => open(i));
+        });
+
+        lbClose.addEventListener('click', close);
+        lbPrev.addEventListener('click', prev);
+        lbNext.addEventListener('click', next);
+
+        lb.addEventListener('click', (e) => {
+            if (e.target === lb) close();
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (!lb.classList.contains('active')) return;
+            if (e.key === 'Escape') close();
+            else if (e.key === 'ArrowLeft') prev();
+            else if (e.key === 'ArrowRight') next();
+        });
+
+        // Swipe support on touch devices
+        let touchStartX = 0;
+        lb.addEventListener('touchstart', (e) => {
+            touchStartX = e.touches[0].clientX;
+        }, { passive: true });
+        lb.addEventListener('touchend', (e) => {
+            const dx = e.changedTouches[0].clientX - touchStartX;
+            if (Math.abs(dx) > 50) {
+                if (dx > 0) prev(); else next();
+            }
+        }, { passive: true });
+    })();
+    </script>
+
+</body>
+</html>
